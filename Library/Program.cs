@@ -28,14 +28,14 @@ namespace Library
             PublicLibrary publicLibrary = new PublicLibrary();
 
             Book danBilzerianBook = new Book("The Setup","Dan Bilzerian",2);
-            publicLibrary.Books.Add(danBilzerianBook);
+            publicLibrary.AddBook(danBilzerianBook);
 
             Book elonMuskBook = new Book("Future","Elon Musk",2);
-            publicLibrary.Books.Add(elonMuskBook);
+            publicLibrary.AddBook(elonMuskBook);
 
             Person person = new Person("Karen",1);
 
-            LibraryManager.BorrowBook(person, "Future");
+            LibraryManager.BorrowBook(person, "Future",publicLibrary);
 
 
 

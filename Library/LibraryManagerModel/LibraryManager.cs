@@ -13,12 +13,10 @@ namespace Library.LibraryManagerModel
 {
     internal static class LibraryManager
     {
-        private static Library.LibraryModel.Library _library;
-        public static List<Person> clientOfLibrary { get; set; }
 
-        public static void BorrowBook(Person person, string nameOfBook)
+        public static void BorrowBook(Person person, string nameOfBook,Library.LibraryModel.Library library)
         {
-            foreach(var item in _library.Books)
+            foreach(var item in library.Books)
             {
                 if (item.Name == nameOfBook)
                 {

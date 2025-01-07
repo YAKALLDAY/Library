@@ -15,7 +15,7 @@ namespace Library.PersonModel
         public string Name { get; set; }
         public Guid Id { get; set; } = Guid.NewGuid();
         public PersonTypeEnum PersonType { get; set; }
-        public List<Book> booksThatHeBorrowed { get; set; }
+        public List<Book> booksThatHeBorrowed { get; set; } = new List<Book>();
         public Person() { }
         public Person(string name,int personType)
         {

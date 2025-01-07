@@ -20,11 +20,11 @@ namespace Library.LibraryModel
                    where book.Name == name
                    select book;
         }
-        protected void AddBook(Book book)
+        public void AddBook(Book book)
         {
             Books.Add(book);
         }
-        protected void RemoveBook(Book book)
+        public void RemoveBook(Book book)
         {
             Books.Remove(book);
         }
