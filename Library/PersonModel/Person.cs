@@ -3,14 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Library.LibraryManager;
-using Library.Book;
-using Library.Library;
+using Library.LibraryManagerModel;
+using Library.BookModel;
+using Library.LibraryModel;
+using Library.ApplicationHelper;
 
-namespace Library.Person
+namespace Library.PersonModel
 {
     internal class Person
     {
+        public string Name { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public PersonTypeEnum PersonType { get; set; }
+        public List<Book> booksThatHeBorrowed { get; set; }
+        public Person() { }
         public Person(string name,int personType)
         {
             Name = name;
@@ -23,11 +29,6 @@ namespace Library.Person
                 throw new ArgumentException("Invalid value for TypeOfBook. Must be 1 (TechnicalBook) or 2 (LiteratureBook).");
             }
         }
-        public Person() { }
-        public string Name { get; set; }
-        public Guid Id { get; set; } = Guid.NewGuid();
-        public bool HasDebt { get; set; }
-        public PersonTypeEnum PersonType { get; set; }
     }
     public enum PersonTypeEnum
     {

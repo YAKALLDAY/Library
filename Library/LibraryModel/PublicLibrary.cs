@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Library
+namespace Library.LibraryModel
 {
-    internal class PublicLibrary
+    internal class PublicLibrary:Library
     {
     }
 }

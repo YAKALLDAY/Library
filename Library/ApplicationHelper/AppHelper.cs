@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.Library
+namespace Library.ApplicationHelper
 {
-    internal class UniverityLibrary
+    internal class AppHelper
     {
     }
 }
