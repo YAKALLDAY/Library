@@ -47,6 +47,8 @@ namespace Library
 
             AppHelper.PrintListOfClientLibrary(listOfClientLibrary);
 
+            AppHelper.PrintListOfLibraryBooks(publicLibrary.Books);
+
             string serializeJson = JsonConvert.SerializeObject(listOfClientLibrary);
             File.WriteAllText(path, json);
 

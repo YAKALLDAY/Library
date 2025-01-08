@@ -20,5 +20,12 @@ namespace Library.ApplicationHelper
                 Console.WriteLine(person.Name + "\t" + person.Id + "\t" + person.PersonType);
             }
         }
+        public static void PrintListOfLibraryBooks(List<Book> books)
+        {
+            foreach (var book in books)
+            {
+                Console.WriteLine(book.Name + "\t" + book.Id + "\t" + book.Author + "\t" + book.TypeOfBook);
+            }
+        }
     }
 }
