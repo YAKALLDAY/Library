@@ -7,6 +7,7 @@ using Library.LibraryManagerModel;
 using Library.BookModel;
 using Library.PersonModel;
 using Library.ApplicationHelper;
+using Library.Enums;
 
 namespace Library.LibraryModel
 {

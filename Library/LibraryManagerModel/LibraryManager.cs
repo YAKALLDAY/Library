@@ -8,6 +8,7 @@ using Library.BookModel;
 using Library.LibraryModel;
 using Library.PersonModel;
 using Library.ApplicationHelper;
+using Library.Enums;
 
 namespace Library.LibraryManagerModel
 {

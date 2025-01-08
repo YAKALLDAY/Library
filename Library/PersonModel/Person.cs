@@ -7,6 +7,7 @@ using Library.LibraryManagerModel;
 using Library.BookModel;
 using Library.LibraryModel;
 using Library.ApplicationHelper;
+using Library.Enums;
 
 namespace Library.PersonModel
 {
@@ -29,10 +30,5 @@ namespace Library.PersonModel
                 throw new ArgumentException("Invalid value for TypeOfBook. Must be 1 (TechnicalBook) or 2 (LiteratureBook).");
             }
         }
-    }
-    public enum PersonTypeEnum
-    {
-        Student = 1,
-        User
     }
 }
