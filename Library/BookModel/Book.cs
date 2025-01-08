@@ -37,9 +37,4 @@ namespace Library.BookModel
         }
         
     }
-    public enum TypeOfBookEnum
-    {
-        TechnicalBook = 1,
-        LiteratureBook,
-    }
 }
