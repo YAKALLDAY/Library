@@ -14,7 +14,7 @@ namespace Library.LibraryModel
     internal class Library
     {
         public List<Book> Books { get; set; } = new List<Book>();
-        protected IEnumerable<Book> GetBook( string name)
+        public IEnumerable<Book> GetBook( string name)
         {
 
             return from book in Books

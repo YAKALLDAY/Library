@@ -29,15 +29,15 @@ namespace Library
 
             Library.LibraryModel.Library library = new Library.LibraryModel.Library();
 
-            Book danBilzerianBook = new Book("The Setup","Dan Bilzerian",2);
+            Book danBilzerianBook = new Book("The Setup", "Dan Bilzerian", 2);
             library.AddBook(danBilzerianBook);
 
-            Book elonMuskBook = new Book("Future","Elon Musk",2);
+            Book elonMuskBook = new Book("Future", "Elon Musk", 2);
             library.AddBook(elonMuskBook);
 
-            Person person = new Person("Karen",1);
+            Person person = new Person("Karen", 1);
 
-            LibraryManager.BorrowBook(person, "Future",library);
+            LibraryManager.BorrowBook(person, "Future", library);
 
             string jsonString = File.ReadAllText(path);
 
