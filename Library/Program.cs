@@ -27,17 +27,17 @@ namespace Library
 
 
 
-            PublicLibrary publicLibrary = new PublicLibrary();
+            Library.LibraryModel.Library library = new Library.LibraryModel.Library();
 
             Book danBilzerianBook = new Book("The Setup","Dan Bilzerian",2);
-            publicLibrary.AddBook(danBilzerianBook);
+            library.AddBook(danBilzerianBook);
 
             Book elonMuskBook = new Book("Future","Elon Musk",2);
-            publicLibrary.AddBook(elonMuskBook);
+            library.AddBook(elonMuskBook);
 
             Person person = new Person("Karen",1);
 
-            LibraryManager.BorrowBook(person, "Future",publicLibrary);
+            LibraryManager.BorrowBook(person, "Future",library);
 
             string jsonString = File.ReadAllText(path);
 
@@ -47,18 +47,18 @@ namespace Library
 
             AppHelper.PrintListOfClientLibrary(listOfClientLibrary);
 
-            AppHelper.PrintListOfLibraryBooks(publicLibrary.Books);
+            AppHelper.PrintListOfLibraryBooks(library.Books);
 
             string serializeJson = JsonConvert.SerializeObject(listOfClientLibrary);
-            File.WriteAllText(path, json);
+            File.WriteAllText(path, serializeJson);
 
             string filePathForBooks = "dbForBooks.json";
-            string bookSerializeJson = JsonConvert.SerializeObject(publicLibrary.Books);
+            string bookSerializeJson = JsonConvert.SerializeObject(library.Books);
             File.WriteAllText(filePathForBooks, bookSerializeJson);
 
             Process.Start(new ProcessStartInfo("notepad.exe", path) { UseShellExecute = true });
 
-            Process.Start(new ProcessStartInfo("notepad.exe", filePathForBooks) { UseShellExecute = true });
+            //Process.Start(new ProcessStartInfo("notepad.exe", filePathForBooks) { UseShellExecute = true });
 
         }
     }

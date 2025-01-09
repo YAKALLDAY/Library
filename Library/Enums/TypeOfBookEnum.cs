@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Library.LibraryModel
+namespace Library.Enums
 {
-    internal class PublicLibrary:Library
+    public enum TypeOfBookEnum
     {
+        TechnicalBook = 1,
+        LiteratureBook
     }
 }

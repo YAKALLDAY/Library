@@ -11,9 +11,5 @@ namespace Library.Enums
         Student = 1,
         User
     }
-    public enum TypeOfBookEnum
-    {
-        TechnicalBook = 1,
-        LiteratureBook,
-    }
+    
 }

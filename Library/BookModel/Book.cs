@@ -30,10 +30,6 @@ namespace Library.BookModel
             {
                 TypeOfBook = (TypeOfBookEnum)typeOfBook;
             }
-            else
-            {
-                throw new ArgumentException("Invalid value for TypeOfBook. Must be 1 (TechnicalBook) or 2 (LiteratureBook).");
-            }
         }
         
     }

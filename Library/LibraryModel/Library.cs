@@ -11,7 +11,7 @@ using Library.Enums;
 
 namespace Library.LibraryModel
 {
-    internal abstract class Library
+    internal class Library
     {
         public List<Book> Books { get; set; } = new List<Book>();
         protected IEnumerable<Book> GetBook( string name)

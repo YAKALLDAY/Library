@@ -14,7 +14,6 @@ namespace Library.LibraryManagerModel
 {
     internal static class LibraryManager
     {
-
         public static void BorrowBook(Person person, string nameOfBook,Library.LibraryModel.Library library)
         {
             foreach(var item in library.Books)
